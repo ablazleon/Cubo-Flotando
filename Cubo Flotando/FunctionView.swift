@@ -22,9 +22,23 @@ import UIKit
         
         // Drawing code
         
+        // Given an initial value it is drawn the cosine
         let path = UIBezierPath()
-        path.move(to: CGPoint(x:10, y:10))  // Por qué el add line no dibuja: proque no empiueza
-        path.addLine(to: CGPoint(x:100, y:100))
+        
+        let i0 = 0.0
+        let x0 = 0.0
+        let y0 = 0.0
+        
+        path.move(to: CGPoint(x:10, y:10)) // To draw the line it should start
+        
+        // How to do a for that makes form i = 0 to a certain value
+        for i in stride(from: i0, to:800.0, by:1.0){
+            let x = i + x0
+            let y = -cos(i) + y0
+            path.addLine(to: CGPoint(x:x, y:y))
+        
+        }
+        
         path.lineWidth = 3
         UIColor.magenta.setStroke()
         path.stroke()
