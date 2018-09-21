@@ -23,9 +23,11 @@ import UIKit
         // Drawing code
         
         let path = UIBezierPath()
-        path.move(to: CGPoint(x:100, y:100))
+        path.move(to: CGPoint(x:10, y:10))  // Por qué el add line no dibuja: proque no empiueza
+        path.addLine(to: CGPoint(x:100, y:100))
         path.lineWidth = 3
         UIColor.magenta.setStroke()
+        path.stroke()
         
         
         
