@@ -18,27 +18,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vwn-b6-N7e">
+                                <rect key="frame" x="0.0" y="318" width="665" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCJ-vC-ct8">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GTy-Mx-lht">
+                                        <rect key="frame" x="40" y="0.0" width="627" height="31"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2 - Cubo Flotando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUv-86-PjM">
-                                <rect key="frame" x="71" y="20" width="186" height="26.5"/>
+                                <rect key="frame" x="94.5" y="20" width="186" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-3f-blj" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
-                                <rect key="frame" x="67" y="147.5" width="240" height="392"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hau-wS-4HE">
+                                <rect key="frame" x="0.0" y="61.5" width="375" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-3f-blj" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bha-4w-BxS">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="203"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poj-Fj-N39">
+                                        <rect key="frame" x="0.0" y="253" width="375" height="128"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lXr-eU-rbq">
+                                <rect key="frame" x="8" y="498" width="351" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="N52-8r-NV2">
+                                <rect key="frame" x="8" y="62" width="359" height="593"/>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.63227136250000004" green="0.95089267040000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lUv-86-PjM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5GF-7G-fHq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QOe-3f-blj" secondAttribute="trailing" constant="68" id="94Z-Ky-Ffk"/>
-                            <constraint firstItem="QOe-3f-blj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="Pbp-IJ-IqF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lUv-86-PjM" secondAttribute="trailing" constant="118" id="evx-vM-LU6"/>
-                            <constraint firstItem="QOe-3f-blj" firstAttribute="top" secondItem="lUv-86-PjM" secondAttribute="bottom" constant="101" id="lgo-Ma-42B"/>
-                            <constraint firstItem="QOe-3f-blj" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mYu-e5-ouN"/>
-                            <constraint firstItem="lUv-86-PjM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="tez-wK-zQ5"/>
+                            <constraint firstItem="N52-8r-NV2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Kah-km-fAj"/>
+                            <constraint firstItem="lUv-86-PjM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ks4-y9-rkM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N52-8r-NV2" secondAttribute="trailing" constant="8" id="PNb-OP-81z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="N52-8r-NV2" secondAttribute="bottom" constant="12" id="Ybl-hT-X7d"/>
+                            <constraint firstItem="lUv-86-PjM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pkc-Th-Gg2"/>
+                            <constraint firstItem="N52-8r-NV2" firstAttribute="top" secondItem="lUv-86-PjM" secondAttribute="bottom" constant="15.5" id="qew-ac-Olw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -48,6 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-50.399999999999999" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>
