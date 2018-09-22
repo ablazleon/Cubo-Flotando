@@ -16,19 +16,22 @@ import UIKit
 @IBDesignable
 class FunctionView: UIView {
 
-    //let color = UIColor.red
+    @IBInspectable
+    var color : UIColor = .red
+    
+    @IBInspectable
+    var lw : Double = 5
+    
+    @IBInspectable
+    var scale : Double = 4
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         
         // Inner atribute of the method
-        // var color : UIColor = .red
         
-        // @IBInspectable
-        var lw : Double = 5
-        
-        // Drawing code
+   // Drawing code
         
         // Given an initial value it is drawn the cosine
         let path = UIBezierPath()
@@ -42,12 +45,14 @@ class FunctionView: UIView {
         // How to do a for that makes form i = 0 to a certain value
         for i in stride(from: i0, to:800.0, by:1.0){
             let x = i + x0
-            let y = cos(i) + y0
+            let y = scale * (cos(i) + y0)
             path.addLine(to: CGPoint(x:x, y:y))
         
         }
         
         path.lineWidth = CGFloat(lw)
+        // UIColor.red.setStroke()
+        color.setStroke()
         // UIColor.color.setStroke()
         path.stroke()
         
