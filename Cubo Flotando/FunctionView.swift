@@ -13,12 +13,20 @@ import UIKit
 
 // Function View draws a line
 // @IBDesignable makes the interface builder render the view directly to the canvas.
-@IBDesignable class FunctionView: UIView {
+@IBDesignable
+class FunctionView: UIView {
 
+    //let color = UIColor.red
     
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
+        
+        // Inner atribute of the method
+        // var color : UIColor = .red
+        
+        // @IBInspectable
+        var lw : Double = 5
         
         // Drawing code
         
@@ -39,8 +47,8 @@ import UIKit
         
         }
         
-        path.lineWidth = 3
-        UIColor.magenta.setStroke()
+        path.lineWidth = CGFloat(lw)
+        // UIColor.color.setStroke()
         path.stroke()
         
         
