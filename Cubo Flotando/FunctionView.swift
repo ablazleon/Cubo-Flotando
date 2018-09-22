@@ -32,7 +32,7 @@ class FunctionView: UIView {
         // Inner atribute of the method
         
    // Drawing code
-        
+        // Como narizes añadir cosntarints  y data source
         // Given an initial value it is drawn the cosine
         let path = UIBezierPath()
         
