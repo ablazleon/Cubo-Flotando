@@ -19,19 +19,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2ki-YR-L7a">
-                                <rect key="frame" x="-15.5" y="30" width="406" height="635.5"/>
+                                <rect key="frame" x="1.5" y="30" width="371" height="635.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="P2 - Cubo Flotando" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lUv-86-PjM">
-                                        <rect key="frame" x="0.0" y="0.0" width="406" height="26.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="371" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bHu-HF-vSD" userLabel="Stack View 1">
-                                        <rect key="frame" x="0.0" y="36.5" width="406" height="380"/>
+                                        <rect key="frame" x="0.0" y="36.5" width="371" height="380"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ogh-IO-Xvv">
-                                                <rect key="frame" x="0.0" y="0.0" width="406" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="371" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lado:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv8-0R-UXz">
                                                         <rect key="frame" x="0.0" y="0.0" width="43" height="30"/>
@@ -40,23 +40,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="brK-2H-Sse">
-                                                        <rect key="frame" x="41" y="0.0" width="367" height="31"/>
+                                                        <rect key="frame" x="41" y="0.0" width="332" height="31"/>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VOF-Sy-egg">
-                                                <rect key="frame" x="25.5" y="40" width="355" height="340"/>
+                                                <rect key="frame" x="8" y="40" width="355" height="340"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QOe-3f-blj" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="113.5"/>
+                                                        <rect key="frame" x="27.5" y="0.0" width="300" height="113.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFo-Tk-nWe">
-                                                        <rect key="frame" x="0.0" y="113.5" width="355" height="113"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFo-Tk-nWe" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                        <rect key="frame" x="27.5" y="113.5" width="300" height="113"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-17-khh">
-                                                        <rect key="frame" x="0.0" y="226.5" width="355" height="113.5"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-17-khh" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                        <rect key="frame" x="27.5" y="226.5" width="300" height="113.5"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
@@ -68,11 +68,11 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-iE-SmL" userLabel="Stack View 2">
-                                        <rect key="frame" x="0.0" y="426.5" width="406" height="209"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZqE-iE-SmL" userLabel="Stack View 2">
+                                        <rect key="frame" x="0.0" y="426.5" width="371" height="209"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ag-QH-eHT">
-                                                <rect key="frame" x="0.0" y="0.0" width="363" height="30"/>
+                                                <rect key="frame" x="21.5" y="0.0" width="328" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiempo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWh-2C-pmb">
                                                         <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
@@ -84,17 +84,22 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VtE-ah-Z3i">
-                                                        <rect key="frame" x="68" y="0.0" width="297" height="31"/>
+                                                        <rect key="frame" x="68" y="0.0" width="262" height="31"/>
                                                     </slider>
                                                 </subviews>
                                             </stackView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCT-12-Drc">
-                                                <rect key="frame" x="0.0" y="40" width="355" height="169"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCT-12-Drc" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                                <rect key="frame" x="35.5" y="40" width="300" height="169"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZqE-iE-SmL" firstAttribute="centerX" secondItem="2ki-YR-L7a" secondAttribute="centerX" id="KIj-B6-Lod"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="uXc-ae-1zL"/>
+                                    <constraint firstItem="ZqE-iE-SmL" firstAttribute="centerX" secondItem="2ki-YR-L7a" secondAttribute="centerX" id="xLp-Ha-CXj"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.63227136250000004" green="0.95089267040000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
