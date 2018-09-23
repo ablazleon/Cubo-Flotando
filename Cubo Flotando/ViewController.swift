@@ -12,6 +12,9 @@ class ViewController: UIViewController, FunctionViewDataSource {
   
     
     @IBOutlet weak var posSpeedFunctionView: FunctionView!
+    @IBOutlet weak var lengthSlider: UIView!
+    
+    // THe value of the slider got the lenth value.
     
     // @IBOutlet weak var funcView: FunctionView!
     
@@ -19,6 +22,11 @@ class ViewController: UIViewController, FunctionViewDataSource {
     // FIsrts it is created an atribute of the class
     var cubeModel : CubeModel!
     
+    @IBAction func updateLength(_ sender: UISlider) {
+        
+        cubeModel.L = Double(sender.value)
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

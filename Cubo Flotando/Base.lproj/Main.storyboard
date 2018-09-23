@@ -42,17 +42,29 @@
                                     <constraint firstAttribute="width" constant="240" id="GAD-k2-ItG"/>
                                 </constraints>
                             </stackView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BiC-9Y-f31">
+                                <rect key="frame" x="128" y="48" width="119" height="31"/>
+                                <connections>
+                                    <action selector="ladoSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="5Ue-we-yJc"/>
+                                    <action selector="updateLength:" destination="BYZ-38-t0r" eventType="valueChanged" id="KCH-yG-CcR"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="0.60959278299999997" green="0.9624983775" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BiC-9Y-f31" firstAttribute="leading" secondItem="ZGT-Xg-2XZ" secondAttribute="leading" constant="130" id="4aV-XK-1sE"/>
+                            <constraint firstItem="GaA-Av-ogs" firstAttribute="top" secondItem="BiC-9Y-f31" secondAttribute="bottom" constant="15" id="CfK-7v-Qap"/>
                             <constraint firstItem="abg-Lc-ODe" firstAttribute="top" secondItem="ZGT-Xg-2XZ" secondAttribute="top" id="DIx-Vw-I4O"/>
                             <constraint firstItem="sz2-Ic-79B" firstAttribute="leading" secondItem="ZGT-Xg-2XZ" secondAttribute="leading" constant="67" id="Y2n-t3-hFv"/>
                             <constraint firstItem="sz2-Ic-79B" firstAttribute="top" secondItem="abg-Lc-ODe" secondAttribute="bottom" constant="52.5" id="dLC-gf-EfV"/>
+                            <constraint firstItem="ZGT-Xg-2XZ" firstAttribute="trailing" secondItem="BiC-9Y-f31" secondAttribute="trailing" constant="130" id="nRu-On-ORQ"/>
                             <constraint firstItem="abg-Lc-ODe" firstAttribute="centerX" secondItem="ZGT-Xg-2XZ" secondAttribute="centerX" id="sCX-RG-AcS"/>
+                            <constraint firstItem="BiC-9Y-f31" firstAttribute="top" secondItem="oO4-F9-Q6o" secondAttribute="bottom" constant="7.5" id="tsO-zC-yIS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZGT-Xg-2XZ"/>
                     </view>
                     <connections>
+                        <outlet property="lengthSlider" destination="7PD-Ie-ZHK" id="4xD-Gf-d9r"/>
                         <outlet property="posSpeedFunctionView" destination="GaA-Av-ogs" id="a9M-xn-pw0"/>
                     </connections>
                 </viewController>

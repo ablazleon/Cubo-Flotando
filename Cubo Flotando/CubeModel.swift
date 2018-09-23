@@ -10,9 +10,9 @@ import Foundation
 
 class CubeModel {
 
-    private var L = 1.0
+    var L = 1.0
     private var g = 9.8
-    lazy private var w = sqrt((2*g)/L) // It is found when neccesary.
+    lazy var w = sqrt((2*g)/L) // It is found when neccesary.
  //   private var A = 1.0
     
     // This methods must be public so it can be acceced to them from the viewCOntroller
