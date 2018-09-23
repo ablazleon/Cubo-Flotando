@@ -14,14 +14,16 @@ class ViewController: UIViewController, FunctionViewDataSource {
 
     // @IBOutlet weak var funcView: FunctionView!
     
-    @IBOutlet weak var posSpeedFunctionView: FunctionView!
+    @IBOutlet weak var posSpeedFunctionVIew: FunctionView!
     
+    // FIsrts it is created an atribute of the class
+    var cubeModel : CubeModel!
     
-    let cubeModel = CubeModel() // It is created an object of class cubeModel
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        cubeModel = CubeModel() // It is created an object of class cubeModel
         posSpeedFunctionView.dataSource = self
         
         // Do any additional setup after loading the view, typically from a nib.
