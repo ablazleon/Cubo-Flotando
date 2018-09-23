@@ -102,7 +102,6 @@ class ViewController: UIViewController, FunctionViewDataSource {
             let y = cubeModel.accAtTime(time)
             return Point(x:x, y:y)
             
-            
         default:
             return Point(x:0, y:0)
         }

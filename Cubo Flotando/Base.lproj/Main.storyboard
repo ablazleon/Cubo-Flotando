@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -36,7 +36,7 @@
                                     <action selector="updateLength:" destination="BYZ-38-t0r" eventType="valueChanged" id="KCH-yG-CcR"/>
                                 </connections>
                             </slider>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-a2-Qwq">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-a2-Qwq">
                                 <rect key="frame" x="57" y="86" width="250" height="225"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o00-2f-Qps" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
@@ -53,10 +53,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-Ic-79B">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-Ic-79B">
                                 <rect key="frame" x="62" y="435" width="240" height="185"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GaA-Av-ogs" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaA-Av-ogs" customClass="FunctionView" customModule="Cubo_Flotando" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="185"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -70,6 +70,7 @@
                         <color key="backgroundColor" red="0.60959278299999997" green="0.9624983775" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BiC-9Y-f31" firstAttribute="leading" secondItem="ZGT-Xg-2XZ" secondAttribute="leading" constant="130" id="4aV-XK-1sE"/>
+                            <constraint firstItem="ZGT-Xg-2XZ" firstAttribute="bottom" secondItem="hRe-a2-Qwq" secondAttribute="bottom" constant="356" id="9ua-Pg-voR"/>
                             <constraint firstItem="abg-Lc-ODe" firstAttribute="top" secondItem="ZGT-Xg-2XZ" secondAttribute="top" id="DIx-Vw-I4O"/>
                             <constraint firstItem="ZGT-Xg-2XZ" firstAttribute="bottom" secondItem="GaA-Av-ogs" secondAttribute="bottom" constant="47" id="Eb3-J6-2GK"/>
                             <constraint firstItem="hRe-a2-Qwq" firstAttribute="top" secondItem="BiC-9Y-f31" secondAttribute="bottom" constant="8" id="U5O-h5-xEX"/>
