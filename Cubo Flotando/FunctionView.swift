@@ -119,9 +119,9 @@ class FunctionView: UIView {
         let path = UIBezierPath()
         
         //Initial position
-//        var x0 = 0.0
-//        var y0 = 0.0
-//        var t0 = 0.0
+        var x0 = 0.0
+        var y0 = 0.0
+        var t0 = 0.0
         
         path.move(to: CGPoint(x: x0, y: y0))
         

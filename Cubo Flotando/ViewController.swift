@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController, FunctionViewDataSource {
+  
+    
 
     // @IBOutlet weak var funcView: FunctionView!
     
     @IBOutlet weak var posSpeedFunctionView: FunctionView!
+    
+    
+    let cubeModel = CubeModel() // It is created an object of class cubeModel
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,18 +65,19 @@ class ViewController: UIViewController, FunctionViewDataSource {
      *CGPoint
      
      */
-    func pointOfFunctionView(_ functionView: FunctionView, atTime time: Double) -> CGPoint {
+    func pointOfFunctionView(_ functionView: FunctionView, atTime time: Double) -> Point {
         switch functionView {
             
-            case posSpeedFunctionView:
-                let x = cubeModel.posAtTime(time)
-                let y = cubeModel.speedAtTime(time)
-                return Point(x:x, y:y)
+        case posSpeedFunctionView:
+            let x = cubeModel.posAtTime(time)
+            let y = cubeModel.speedAtTime(time)
+            return Point(x:x, y:y)
             
-            default:
-                return Point(x:0, y:0)
+        default:
+            return Point(x:0, y:0)
         }
     }
+    
     
 
     

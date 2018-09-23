@@ -15,6 +15,7 @@ class CubeModel {
     lazy private var w = sqrt((2*g)/L) // It is found when neccesary.
  //   private var A = 1.0
     
+    // This methods must be public so it can be acceced to them from the viewCOntroller
     /**
     Give the position of the cube at time t.
      
@@ -22,7 +23,7 @@ class CubeModel {
      
      return pos
      */
-    private func posAtTime(_ t: Double) -> (Double) {
+    func posAtTime(_ t: Double) -> (Double) {
         return (1/2)*L*cos(w*t)
     }
     
@@ -33,7 +34,7 @@ class CubeModel {
      
      return speed
      */
-    private func speedAtTime(_ t: Double) -> (Double) {
+    func speedAtTime(_ t: Double) -> (Double) {
         return -(1/2)*L*w*sin(w*t)
     }
     
