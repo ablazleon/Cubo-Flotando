@@ -17,7 +17,7 @@ class ViewController: UIViewController, FunctionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        speedPosFunctionView.dataSource = self
+        posSpeedFunctionView.dataSource = self
         
         // Do any additional setup after loading the view, typically from a nib.
         //        funcView.scale = 2
@@ -63,7 +63,7 @@ class ViewController: UIViewController, FunctionViewDataSource {
     func pointOfFunctionView(_ functionView: FunctionView, atTime time: Double) -> CGPoint {
         switch functionView {
             
-            case speedPosFunctionView:
+            case posSpeedFunctionView:
                 let x = cubeModel.posAtTime(time)
                 let y = cubeModel.speedAtTime(time)
                 return Point(x:x, y:y)

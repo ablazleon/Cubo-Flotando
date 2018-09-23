@@ -10,13 +10,18 @@
 
 import UIKit
 
+// Point
+struct Point {
+    var x = 0.0
+    var y = 0.0
+}
 // It is created a protocol FunctionVIewDataSOurce so to obtain the data from the view form the view controller. The function get a type func, and depending on it get an star time.
 
 protocol FunctionViewDataSource : class{
     
     func startTimeOfFunctionView(_  functionView: FunctionView) -> Double
     func endTimeOfFunctionView(_ functionView: FunctionView) -> Double
-    func pointOfFunctionView(_ functionView: FunctionView, atTime time: Double) -> CGPoint
+    func pointOfFunctionView(_ functionView: FunctionView, atTime time: Double) -> Point
     
 }
 
@@ -33,6 +38,10 @@ class FunctionView: UIView {
     
     @IBInspectable
     var scale : Double = 4
+    
+    // It is created an object dataSource
+    
+    weak var dataSource: FunctionViewDataSource!
     
     override func draw(_ rect: CGRect) {
         
@@ -110,9 +119,9 @@ class FunctionView: UIView {
         let path = UIBezierPath()
         
         //Initial position
-        var x0 = 0.0
-        var y0 = 0.0
-        var t0 = 0.0
+//        var x0 = 0.0
+//        var y0 = 0.0
+//        var t0 = 0.0
         
         path.move(to: CGPoint(x: x0, y: y0))
         
@@ -124,7 +133,7 @@ class FunctionView: UIView {
             // var ynext = nextY(t)
             
             // pointOfFunctionView, chooses the appropiate function depending of the UIVIew and then the view Controller display it.
-            let nextPoint = pointOfFunctionView(self, t)
+            let nextPoint = dataSource.pointOfFunctionView(self, atTime: t)
             
             // All the formulas go to the Cube Model
             // path.addLine(to: CGPoint(x: xnext, y: ynext))
