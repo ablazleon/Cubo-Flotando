@@ -11,10 +11,10 @@ import UIKit
 class ViewController: UIViewController, FunctionViewDataSource {
   
     
-
+    @IBOutlet weak var posSpeedFunctionView: FunctionView!
+    
     // @IBOutlet weak var funcView: FunctionView!
     
-    @IBOutlet weak var posSpeedFunctionVIew: FunctionView!
     
     // FIsrts it is created an atribute of the class
     var cubeModel : CubeModel!

@@ -53,7 +53,7 @@
                         <viewLayoutGuide key="safeArea" id="ZGT-Xg-2XZ"/>
                     </view>
                     <connections>
-                        <outlet property="posSpeedFunctionVIew" destination="GaA-Av-ogs" id="btv-Ny-byo"/>
+                        <outlet property="posSpeedFunctionView" destination="GaA-Av-ogs" id="a9M-xn-pw0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
