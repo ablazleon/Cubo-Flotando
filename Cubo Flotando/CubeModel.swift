@@ -45,7 +45,7 @@ class CubeModel {
      
      return speed
      */
-    private func accAtTime(_ t: Double) -> (Double) {
+    func accAtTime(_ t: Double) -> (Double) {
         return -g*cos(w*t)
     }
     

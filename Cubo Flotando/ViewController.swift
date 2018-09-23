@@ -12,6 +12,10 @@ class ViewController: UIViewController, FunctionViewDataSource {
   
     
     @IBOutlet weak var posSpeedFunctionView: FunctionView!
+    @IBOutlet weak var timePosFunctionView: FunctionView!
+    @IBOutlet weak var timeSpeedFunctionView: FunctionView!
+    @IBOutlet weak var timeAccFunctionView: FunctionView!
+    
     @IBOutlet weak var lengthSlider: UIView!
     
     // THe value of the slider got the lenth value.
@@ -82,6 +86,22 @@ class ViewController: UIViewController, FunctionViewDataSource {
             let x = cubeModel.posAtTime(time)
             let y = cubeModel.speedAtTime(time)
             return Point(x:x, y:y)
+            
+        case timePosFunctionView:
+            let x = time
+            let y = cubeModel.posAtTime(time)
+            return Point(x:x, y:y)
+            
+        case timeSpeedFunctionView:
+            let x = time
+            let y = cubeModel.speedAtTime(time)
+            return Point(x:x, y:y)
+        
+        case timeAccFunctionView:
+            let x = time
+            let y = cubeModel.accAtTime(time)
+            return Point(x:x, y:y)
+            
             
         default:
             return Point(x:0, y:0)
