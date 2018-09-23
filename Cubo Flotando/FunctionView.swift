@@ -43,6 +43,11 @@ class FunctionView: UIView {
     
     weak var dataSource: FunctionViewDataSource!
     
+    // Are declared so to be call after the initializers
+    lazy var xmax = bounds.size.width
+    lazy var ymax = bounds.size.height
+    // Despite the inmutable nature of the sizes (more people argued about this problem in StackOverflow)
+    
     override func draw(_ rect: CGRect) {
         
         drawAxis()
@@ -80,9 +85,10 @@ class FunctionView: UIView {
      
      */
     private func drawAxis(){
-        
-        let xmax = bounds.size.width
-        let ymax = bounds.size.height
+
+        // Atributes of the calss
+//        let xmax = bounds.size.width
+//        let ymax = bounds.size.height
         
         let xaxis = UIBezierPath()
         let yaxis = UIBezierPath()
@@ -104,7 +110,7 @@ class FunctionView: UIView {
     }
     
     /**
-     Draws the axis in the UIView
+     Draws the trajectory in the UIView
      
      It is needed:
      
@@ -138,7 +144,7 @@ class FunctionView: UIView {
             // All the formulas go to the Cube Model
             // path.addLine(to: CGPoint(x: xnext, y: ynext))
             
-            path.addLine(to: CGPoint(x:nextPoint.x, y: nextPoint.y))
+            path.addLine(to: CGPoint(x: centerX(nextPoint.x), y: centerY(nextPoint.y)))
             //path.addLine(to: CGPoint(x:xnext, y:ynext))
         }
         
@@ -148,5 +154,12 @@ class FunctionView: UIView {
         
     }
     
-    
+    // It must be translated the coordinates found by the CubeModel to teh UIView: just centering in the point (xmax/2, ymax/2)
+    private func centerX(_ x: Double) -> CGFloat{
+        var xmax = bounds.size.width
+        return (x + CGFloat(xmax/2))
+    }
+    private func centerY(_ y: Double) -> CGFloat{
+        return (y + CGFloat(ymax/2))
+    }
 }
