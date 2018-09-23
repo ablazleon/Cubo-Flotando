@@ -155,11 +155,10 @@ class FunctionView: UIView {
     }
     
     // It must be translated the coordinates found by the CubeModel to teh UIView: just centering in the point (xmax/2, ymax/2)
-    private func centerX(_ x: Double) -> CGFloat{
-        var xmax = bounds.size.width
-        return (x + CGFloat(xmax/2))
+    private func centerX(_ x: Double) -> Double{
+        return (Double(x) + Double(xmax/2))
     }
-    private func centerY(_ y: Double) -> CGFloat{
-        return (y + CGFloat(ymax/2))
+    private func centerY(_ y: Double) -> Double{
+        return (Double(y) + Double(ymax/2))
     }
 }
