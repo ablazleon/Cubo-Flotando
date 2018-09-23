@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A62F1DE2157AD9400FA3E22 /* CubeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A62F1DD2157AD9400FA3E22 /* CubeModel.swift */; };
 		3A9054C121554A4200D9B533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9054C021554A4200D9B533 /* AppDelegate.swift */; };
 		3A9054C321554A4200D9B533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9054C221554A4200D9B533 /* ViewController.swift */; };
 		3A9054C621554A4200D9B533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9054C421554A4200D9B533 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A62F1DD2157AD9400FA3E22 /* CubeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeModel.swift; sourceTree = "<group>"; };
 		3A9054BD21554A4200D9B533 /* Cubo Flotando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cubo Flotando.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9054C021554A4200D9B533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9054C221554A4200D9B533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				3A9054C021554A4200D9B533 /* AppDelegate.swift */,
 				3A9054C221554A4200D9B533 /* ViewController.swift */,
 				3A9054D2215551FB00D9B533 /* FunctionView.swift */,
+				3A62F1DD2157AD9400FA3E22 /* CubeModel.swift */,
 				3A9054C421554A4200D9B533 /* Main.storyboard */,
 				3A9054C721554A4200D9B533 /* Assets.xcassets */,
 				3A9054C921554A4200D9B533 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			files = (
 				3A9054C321554A4200D9B533 /* ViewController.swift in Sources */,
 				3A9054D3215551FB00D9B533 /* FunctionView.swift in Sources */,
+				3A62F1DE2157AD9400FA3E22 /* CubeModel.swift in Sources */,
 				3A9054C121554A4200D9B533 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

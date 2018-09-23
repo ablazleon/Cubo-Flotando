@@ -10,11 +10,14 @@
 
 import UIKit
 
-// It is created a protocol FunctionVIewDataSOurce so to obtain the data from the view form the view controller.
+// It is created a protocol FunctionVIewDataSOurce so to obtain the data from the view form the view controller. The function get a type func, and depending on it get an star time.
 
 protocol FunctionViewDataSource : class{
     
-    func setBegin( i0: Double)
+    func startTimeOfFunctionView(_  functionView: FunctionView) -> Double
+    func endTimeOfFunctionView(_ functionView: FunctionView) -> Double
+    func pointOfFunctionView(_ functionView: FunctionView, atTime time: Double) -> CGPoint
+    
 }
 
 // Function View draws a line
@@ -34,12 +37,9 @@ class FunctionView: UIView {
     override func draw(_ rect: CGRect) {
         
         drawAxis()
+        drawTrajectory()
         
-        // It is draw the trajectory and the axis
-        
-        // Inner atribute of the method
-        
-//   // Drawing code
+        //   // Old Drawing code: sustitute by private functions.
 //        // Como narizes añadir cosntarints  y data source
 //        // Given an initial value it is drawn the cosine
 //        let path = UIBezierPath()
@@ -97,9 +97,47 @@ class FunctionView: UIView {
     /**
      Draws the axis in the UIView
      
+     It is needed:
+     
+     - Start point
+     - Start time
+     - A resolution
+     - A function to display
+     - An ending point
      */
     private func drawTrajectory() {
         
+        let path = UIBezierPath()
+        
+        //Initial position
+        var x0 = 0.0
+        var y0 = 0.0
+        var t0 = 0.0
+        
+        path.move(to: CGPoint(x: x0, y: y0))
+        
+        // It is draw the path
+        for t in stride (from: t0, to: 800.0, by: 2.0){
+            
+            // Find next point
+            // var xnext = nextX(t)
+            // var ynext = nextY(t)
+            
+            // pointOfFunctionView, chooses the appropiate function depending of the UIVIew and then the view Controller display it.
+            let nextPoint = pointOfFunctionView(self, t)
+            
+            // All the formulas go to the Cube Model
+            // path.addLine(to: CGPoint(x: xnext, y: ynext))
+            
+            path.addLine(to: CGPoint(x:nextPoint.x, y: nextPoint.y))
+            //path.addLine(to: CGPoint(x:xnext, y:ynext))
+        }
+        
+        UIColor.red.setStroke()
+        path.lineWidth = 1.0
+        path.stroke()
+        
     }
-
+    
+    
 }
