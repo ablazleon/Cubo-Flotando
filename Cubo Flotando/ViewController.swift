@@ -22,8 +22,7 @@ class ViewController: UIViewController, FunctionViewDataSource {
     
     // @IBOutlet weak var funcView: FunctionView!
     
-    
-    // FIsrts it is created an atribute of the class
+    // Fisrts it is created an atribute of the class
     var cubeModel : CubeModel!
     
     @IBAction func updateLength(_ sender: UISlider) {
@@ -36,12 +35,19 @@ class ViewController: UIViewController, FunctionViewDataSource {
         super.viewDidLoad()
         
         cubeModel = CubeModel() // It is created an object of class cubeModel
+        // It is stored in the objects the value of seld
+        timePosFunctionView.dataSource = self
+        timeSpeedFunctionView.dataSource = self
+        timeAccFunctionView.dataSource = self
         posSpeedFunctionView.dataSource = self
         
         // Do any additional setup after loading the view, typically from a nib.
         //        funcView.scale = 2
         //        funcView.lw = 8
         //        funcView.color = .blue
+      
+        //lengthSlider.sendActions(for: .valueChanged)
+        
         
     }
     
